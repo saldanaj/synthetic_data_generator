@@ -1,0 +1,54 @@
+table_name: encounters
+schema:
+  - column_name: ENCOUNTER_ID
+    data_type: String
+    description: Unique identifier for the encounter
+    primary_key: true
+
+  - column_name: PATIENT_ID
+    data_type: String
+    description: Reference to the patient in the encounter
+
+  - column_name: PROVIDER_ID
+    data_type: String
+    description: Reference to the provider in the encounter
+
+  - column_name: ENCOUNTER_TYPE
+    data_type: String
+    description: Type of encounter (e.g., Inpatient, Outpatient, ED, Telehealth)
+
+  - column_name: ENCOUNTER_REASON
+    data_type: String
+    description: Reason for the encounter
+
+  - column_name: LOCATION
+    data_type: String
+    description: Name of the clinic or hospital location
+
+  - column_name: DEPARTMENT
+    data_type: String
+    description: Department involved in the encounter (e.g., Cardiology)
+
+  - column_name: ADMIT_DATETIME
+    data_type: DateTime
+    description: Admission timestamp for inpatient encounters
+
+  - column_name: DISCHARGE_DATETIME
+    data_type: DateTime
+    description: Discharge timestamp (if applicable)
+
+  - column_name: ENCOUNTER_DATE
+    data_type: Date
+    description: The date the encounter occurred
+
+  - column_name: STATUS
+    data_type: String
+    description: Status of the encounter (Open, Completed, Canceled)
+
+  - column_name: CREATED_AT
+    data_type: DateTime
+    description: When the encounter record was created
+
+  - column_name: UPDATED_AT
+    data_type: DateTime
+    description: When the encounter record was last updated
