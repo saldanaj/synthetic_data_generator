@@ -1,0 +1,46 @@
+table_name: patient_contact
+schema:
+  - column_name: CONTACT_ID
+    data_type: String
+    description: Unique identifier for the contact record
+    primary_key: true
+
+  - column_name: PATIENT_ID
+    data_type: String
+    description: Foreign key linking to PATIENT table
+
+  - column_name: CONTACT_TYPE
+    data_type: String
+    description: Type of contact (Primary, Emergency, Legal Guardian)
+
+  - column_name: NAME
+    data_type: String
+    description: Full name of contact person
+
+  - column_name: RELATIONSHIP
+    data_type: String
+    description: Relationship to patient (Spouse, Parent, Friend, etc.)
+
+  - column_name: PHONE
+    data_type: String
+    description: Contact phone number
+
+  - column_name: EMAIL
+    data_type: String
+    description: Contact email address
+
+  - column_name: ADDRESS
+    data_type: String
+    description: Mailing or residential address
+
+  - column_name: PREFERRED
+    data_type: Boolean
+    description: Is this the preferred contact method/person?
+
+  - column_name: CREATED_AT
+    data_type: DateTime
+    description: Record creation timestamp
+
+  - column_name: UPDATED_AT
+    data_type: DateTime
+    description: Record last updated timestamp

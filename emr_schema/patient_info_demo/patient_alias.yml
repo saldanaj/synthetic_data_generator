@@ -1,0 +1,34 @@
+table_name: patient_alias
+schema:
+  - column_name: ALIAS_ID
+    data_type: String
+    description: Unique alias identifier
+    primary_key: true
+
+  - column_name: PATIENT_ID
+    data_type: String
+    description: Foreign key linking to PATIENT table
+
+  - column_name: MRN_ALIAS
+    data_type: String
+    description: Alternate or historical medical record number
+
+  - column_name: ALIAS_TYPE
+    data_type: String
+    description: Type of alias (e.g., External ID, Historical MRN, Insurance ID)
+
+  - column_name: SOURCE_SYSTEM
+    data_type: String
+    description: Source system where the alias originated (e.g., legacy EMR, payer)
+
+  - column_name: ACTIVE
+    data_type: Boolean
+    description: Whether this alias is currently valid
+
+  - column_name: CREATED_AT
+    data_type: DateTime
+    description: Record creation timestamp
+
+  - column_name: UPDATED_AT
+    data_type: DateTime
+    description: Record last updated timestamp

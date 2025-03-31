@@ -1,4 +1,4 @@
-table_name: patients
+table_name: patient
 schema: 
   - column_name: PATIENT_ID  
     data_type: String
